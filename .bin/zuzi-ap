@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo iw dev wlan0 interface add wlan0_ap type managed addr 68:07:15:b2:0f:3e
+sudo systemctl start hostapd.service

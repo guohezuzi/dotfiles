@@ -1,0 +1,24 @@
+#!/bin/bash
+# 获取某个目录下 正则匹配的随机一个路径
+
+POSITIONAL=()
+while [[ $# -gt 0 ]]
+do
+	key="$1"
+	case $key in
+		-d|--dir)
+			DIR="$2"
+			shift
+			shift
+			;;
+		*)
+			POSITIONAL+=("$1")
+			shift
+			;;
+esac
+done
+set -- "${POSITIONAL[@]}"
+
+PATH=`ls $DIR |sort --random-sort |head -1`
+echo "${PATH}"
+

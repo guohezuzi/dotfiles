@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#PID=$(pgrep gnome-session|tail -1)
+#export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|tr -d '\0'|cut -d= -f2-)
+
+gsettings set org.gnome.desktop.interface gtk-theme Sweet-Mars
+gsettings set org.gnome.desktop.interface icon-theme Sweet-Mars
+#gsettings set org.gnome.shell.extensions.user-theme name Sweet-Mars
+gsettings set org.gnome.desktop.wm.preferences theme Sweet-Mars
+#gsettings set org.gnome.desktop.background picture-uri 'file:///home/guohezuzi/%E5%9B%BE%E7%89%87/awesome/night.jpg'
+
+
+

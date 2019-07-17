@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+ssh hadoop@master 'zkServer.sh start;'
